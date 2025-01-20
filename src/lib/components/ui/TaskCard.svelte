@@ -171,14 +171,16 @@
 
 <Card>
   <div
-      class="card-content p-4 w-80 bg-white rounded-lg shadow-sm hover:shadow-md transition-all duration-200"
-      draggable="true"
-      on:dragstart={handleCardDragStart}
-      on:dragend={handleCardDragEnd}
-      on:dragover={handleCardDragOver}
-      on:drop={handleCardDrop}
-      class:dragging={isDragging}
-  >
+  class="card-content p-4 w-80 bg-white rounded-lg shadow-sm hover:shadow-md transition-all duration-200"
+  draggable="true"
+  on:dragstart={handleCardDragStart}
+  on:dragend={handleCardDragEnd}
+  on:dragover={handleCardDragOver}
+  on:drop={handleCardDrop}
+  class:dragging={isDragging}
+  role="listitem" 
+  aria-label="Draggable card" 
+>
       <!-- Card Header -->
       <div class="flex justify-between items-center mb-4 group">
           <div class="flex items-center gap-2">
